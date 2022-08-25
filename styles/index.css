@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  a {
+    cursor: pointer;
+  }
+  
+.body {
+background-color: #D2B48C;
+}
+
+  .page {
+    min-width: 320px;
+    font-family: "Satoshi", Helvetica, Arial, sans-serif;
+  }
+
+  .page__content {
+    z-index: -1;
+    margin: 0 auto;
+    /* background-color: white; */
+  }
+
+.header{
+  background-color: white;
+  min-height: 70px;
+}
+
+ .banner{
+  background-image: url(../images/banner_pic.jpg);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  height: 200px;
+  width: 100%+ 10%;
+  margin: 0 auto;
+ }
+
+ .header__list {
+  margin: 0;
+ }
+
+ .list__item {
+  list-style: none;
+ }
