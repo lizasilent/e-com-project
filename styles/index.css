@@ -22,9 +22,31 @@ background-color: #D2B48C;
   }
 
 .header{
+  display: flex;
   background-color: white;
   min-height: 70px;
+  align-items: center;
 }
+
+.header__content{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+}
+
+
+
+ .header__list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+ }
+
+ .list__item {
+  list-style: none;
+  margin-left: 15px;
+ }
 
  .banner{
   background-image: url(../images/banner_pic.jpg);
@@ -33,12 +55,4 @@ background-color: #D2B48C;
   height: 200px;
   width: 100%+ 10%;
   margin: 0 auto;
- }
-
- .header__list {
-  margin: 0;
- }
-
- .list__item {
-  list-style: none;
  }
