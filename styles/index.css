@@ -64,10 +64,11 @@ a {
   flex-direction: column;
   background-color: white;
   border-radius: 10px;
-  height: 230px;
+  max-height: 230px;
   width: 170px;
   overflow: hidden;
   position: relative;
+  padding: 0 10px;
 }
 
 .card__img-container {
@@ -91,7 +92,6 @@ a {
 }
 
 .card__text-container {
-  padding: 5px 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -115,4 +115,8 @@ a {
   position: absolute;
   top: -5px;
   right: 5px;
+}
+
+.card__description{
+  margin: 0;
 }
