@@ -4,6 +4,7 @@
 
 a {
   cursor: pointer;
+  opacity: 0.8;
 }
 
 .body {
@@ -106,6 +107,12 @@ a {
   height: 35px;
 }
 
+.card__icon:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+
 .card__selected {
   background-image: url(../images/favorite.png);
   background-repeat: no-repeat;
@@ -115,6 +122,11 @@ a {
   position: absolute;
   top: -5px;
   right: 5px;
+}
+
+.card__selected:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .card__description{

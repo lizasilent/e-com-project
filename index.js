@@ -21,9 +21,10 @@ let items = [
   },
 ];
 
-function createCard(product) {
+const card = document.querySelector('.catalog__card');
+const catalog = document.querySelector('.catalog');
 
-    const card = document.querySelector('.catalog__card');
+function createCard(product) {
 
     card.innerHTML =
     `
@@ -37,16 +38,16 @@ function createCard(product) {
      <div class="card__icon"></div>
   </div>
 `
-  return card 
+  return card
 }
 
 
+function renderCards(products) {
 
-console.log(createCard(items));
+products.forEach(function(item) {
+    createCard(item)
+});
 
+}
 
-// function renderCards() {
-
-// items.forEach(function(item) )
-
-// }
+renderCards(items); 
