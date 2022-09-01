@@ -38,16 +38,31 @@ function createCard(product) {
      <div class="card__icon"></div>
   </div>
 `
-  return card
+
+
 }
 
 
 function renderCards(products) {
 
 products.forEach(function(item) {
-    createCard(item)
+    
+  createCard(item);
+
 });
+
+   
 
 }
 
 renderCards(items); 
+
+// function forE(products) {
+
+// products.forEach(function(item) {
+//      console.log(item)
+//  });
+
+// }
+
+// forE(items)
