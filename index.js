@@ -21,48 +21,32 @@ let items = [
   },
 ];
 
-const card = document.querySelector('.catalog__card');
-const catalog = document.querySelector('.catalog');
+const catalog = document.querySelector(".catalog");
+const card = document.querySelector(".catalog__card");
+
+
+
+
+
 
 function createCard(product) {
 
-    card.innerHTML =
-    `
-<div class="card__img-container">
-  <div class="card__img">
-  </div></div>
-  <div class="card__selected"></div>
-  <p class="card__description">${product.name}</p>
-  <div class="card__text-container">
-     <p class="card__price">${product.price} ${product.currency}</p>
-     <div class="card__icon"></div>
-  </div>
-`
+const gridElement = catalog.cloneNode(true);
+const cardDescription = gridElement.querySelector(".card__description");
+const cardPrice = gridElement.querySelector(".card__price");
 
-
-}
-
-
-function renderCards(products) {
-
-products.forEach(function(item) {
-    
-  createCard(item);
-
-});
-
+cardDescription.textContent = product.name;
+cardPrice.textContent = product.price;
    
-
+return gridElement;
 }
 
-renderCards(items); 
 
-// function forE(products) {
+function renderCard(data) {
+  console.log(data)
+catalog.prepend(createCard(data))
+}
 
-// products.forEach(function(item) {
-//      console.log(item)
-//  });
-
-// }
-
-// forE(items)
+items.forEach(function(data) {
+  renderCard(data);
+});
