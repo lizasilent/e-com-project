@@ -30,8 +30,8 @@ function createCard(product) {
 
 const newcard = card.cloneNode(true);
 
-const cardDescription = card.querySelector(".card__description");
-const cardPrice = card.querySelector(".card__price");
+const cardDescription = newcard.querySelector(".card__description");
+const cardPrice = newcard.querySelector(".card__price");
 
 cardDescription.textContent = product.name;
 cardPrice.textContent = product.price;
