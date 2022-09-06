@@ -57,15 +57,10 @@ a {
 .catalog {
   border: 1px solid black;
   padding: 30px 50px;
-  /* display: flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  */
 
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 4;
-  grid-template-rows: 4;
 
 }
 
@@ -79,6 +74,7 @@ a {
   overflow: hidden;
   position: relative;
   padding: 0 10px;
+  margin: 10px;
 }
 
 .card__img-container {
